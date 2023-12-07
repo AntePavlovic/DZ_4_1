@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+    function filtrirajPolje(ulaznoPolje) {
+        var novoPolje = ulaznoPolje.filter(function (vrijednost) {
+            return /[A-Z]/.test(vrijednost) || vrijednost.length >= 5;
+        });
+
+            return novoPolje;
+        }
+    var arr = ['Ovo', 'je', 'My', 'prvi', 'komad', 'OF', 'JAVASCRIPT', 'koda', 'Koji', 'je', 'proradio'];
+    var novoPolje = filtrirajPolje(arr);
+    console.log("Ulazno polje:", arr);
+    console.log("Novo polje:", novoPolje);
+ </script>
+</body>
+</html>

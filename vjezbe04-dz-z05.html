@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+    var osoba1 = {
+            firstName: "Marko",
+            lastName: "Maric",
+            age: 40,
+            eyeColor: "black"
+        };
+    var osoba2 = {
+            firstName: "Ante",
+            lastName: "Kajić",
+            age: 36,
+            eyeColor: "blue"
+        };
+
+    var osoba3 = {
+            firstName: "Kaja",
+            lastName: "Pravdić",
+            age: 21,
+            eyeColor: "brown"
+        };
+    var osoba4 = {
+            firstName: "Mirko",
+            lastName: "Brkić",
+            age: 12,
+            eyeColor: "green"
+        };
+    var osobao = [osoba1, osoba2, osoba3, osoba4];
+    for (var i = 0; i < osobao.length; i++) {
+            var osoba = osobao[i];
+            console.log("Indeks:", i);
+            console.log("Ime:", osoba.firstName);
+            console.log("Prezime:", osoba.lastName);
+            console.log("Dob:", osoba.age);
+            console.log("Boja očiju:", osoba.eyeColor);
+        }
+ </script>
+</body>
+</html>

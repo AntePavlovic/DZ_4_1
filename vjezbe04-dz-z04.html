@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+    var polje = new Array(1,2,3,4,7,8,5,6,9, 55, 12, 4,85);
+    console.log('a. Inicijalna dužina polja:', polje.length);
+    console.log('b. Polje sortirano od najvećeg ka najmanjem:', polje.sort(function(a, b){return b - a}))
+    console.log('c. Polje sortirano od najmanjeg ka najvećem:', polje.sort(function(a, b){return a - b})) 
+    var sort=polje.sort(function(a, b){return a - b})
+    sort.pop();
+    console.log('d. Sortirano polje bez zadnjeg člana:', sort);
+    sort.push(19,22);
+    console.log('e. Polje nakon dodavanja članova 19 i 22:',sort);
+    var polje2 = ["Banana", "Orange", "Apple", "Mango"];
+    var polje_final=polje.concat(polje2);
+    console.log('f. Polje nakon spajanja s poljem2:', polje_final); 
+ </script>
+</body>
+</html>

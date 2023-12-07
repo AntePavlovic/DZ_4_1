@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+    function savrsen(broj){
+        var sum = 0;
+        for (var i = 1; i <= broj / 2; i++) {
+            if (broj % i === 0) {
+                sum += i;
+           }
+        }
+        return sum === broj;
+    }  
+    var a=100;
+    for(i=1;i<a;i++)
+    {
+        if(savrsen(i))
+        {
+            console.log(i +' je savršen broj.')
+        }
+    }
+
+ </script>
+</body>
+</html>
